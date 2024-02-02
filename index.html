@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- For main container -->
+    <div class="parent">
+        <h2 class="formheader">Student's Form</h2>
+        <!-- For first input -->
+
+        <!--  -->
+        <h3><small>*</small> Indicates a required Field</h3>
+       <form action="mailto:onyiamiracle@gmail.com" autocomplete="on" method="post">
+        <div class="s-name">
+            <label for="student-Name">Student's First Name <small>*</small></label>
+            <input type="text" id="student-Name" placeholder="Enter Your First name" autocomplete="family-name" required>
+        </div>
+        <!-- for last name -->
+        <div class="lastName">
+            <label for="last-name">Student's Last name <small>*</small></label>
+            <input type="text"  id="last-name" placeholder="Enter Your last Name" autocomplete="name" required>
+        </div>
+        <!-- for student's Email -->
+        <div class="email-student">
+            <label for="s-email">Student's Email <small>*</small></label>
+            <input type="email" id="s-email" placeholder="Enter Your Email" autocomplete="email" required>
+        </div>
+        <div class="student-gender">
+            <label for="s-gender">Student's Gender <small>*</small></label>
+            <input list="gender-select" type="text" id="genderId" required>
+            <datalist id="gender-select">
+                <option value="Male"></option>
+                <option value="Female"></option>
+                <option value="Other"></option>
+            </datalist>
+        </div>
+        <!-- student address -->
+        <div class="s-guardian">
+            <label for="s-gurdian_name">Guardian Name <small>*</small></label>
+            <input type="text" id="s-gurdian_name" placeholder="Guardian Name" required >
+        </div>
+        <!-- student-age -->
+        <div class="studentAge">
+            <label for="s-age">Student's Age <small>*</small></label>
+            <input type="month" id="s-age" placeholder="Enter Your Age" required>
+        </div>
+        <!-- Guradian Address -->
+        <div class="g-adress">
+            <label for="guardian_Address">Guradian's Address <small>*</small></label>
+            <input type="text" id="guardian_Address" placeholder="Guradian's Address" autocomplete="address-level1" required>
+        </div>
+        <div class="s-state">
+            <label for="student-State">Student's State <small>*</small></label>
+            <select id="student-State" placeholder="Guradian's Address" autocomplete="address-level1" required>
+                <option value="Imo" selected>Imo State</option>
+                <option value="Imo">Abia State</option>
+                <option value="Imo">Enugu State</option>
+                <option value="Imo">Anambra State</option>
+                <option value="Imo">Ebonyi State</option>
+            </select>
+        </div>
+        <!-- for submit btn -->
+        <div class="submitBtn">
+            <button type="submit" id="submitButton">Submit</button>
+        </div>
+       </form>
+    </div>
+</body>
+</html>
+<!-- 
+   
+ -->

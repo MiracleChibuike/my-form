@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --red-color: #ff0000;
+    --green-color: #045f04;
+    --gray: rgb(85, 130, 198);
+}
+body{
+    background: var(--white-color);
+}
+.parent{
+    padding: 5px 20px;
+}
+.formheader{
+    text-transform: uppercase;
+}
+.parent h3{
+    margin: 10px;
+}
+small{
+    color: var(--red-color);
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+}
+/* styling for all the divs */
+.s-name, .lastName, .email-student, .student-gender, .s-guardian, .studentAge, .g-adress, .s-state{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+.parent label{
+    margin: 10px 0;
+}
+/* For all the inputs */
+#student-Name, #last-name, #s-email, #genderId, #s-gurdian_name, #s-age, #guardian_Address, #student-State{
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--black-color);
+    border-radius: 3px;
+}
+#student-Name:hover, #last-name:hover, #s-email:hover, #genderId:hover,  #s-gurdian_name:hover, #s-age:hover, #guardian_Address:hover, #student-State:hover{
+    outline: 2px solid var(--gray);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+::placeholder{
+    font-size: smaller;
+}
+#submitButton{
+    padding: 15px;
+    border: 2px solid var(--green-color);
+    color: var(--white-color);
+    background: var(--green-color);
+    border-radius: 5px;
+}
+#submitButton:hover{
+    background: transparent;
+    border: 2px solid var(--gray);
+    color: var(--black-color);
+    cursor: pointer;
+    transition: all .2s;
+}
+.submitBtn{
+    margin: 10px 90px;
+}
